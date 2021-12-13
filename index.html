@@ -73,7 +73,31 @@ p.arrow_box {
 	margin-left: -36px;
 }
 
+/** Prueba psudaclases en formularios**/
 
+input + span {
+  position: relative;
+}
+
+input + span::before {
+  position: absolute;
+  right: -20px;
+  top: 5px;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:invalid + span::before {
+  content: '✖';
+  color: red;
+}
+
+input:valid + span::before {
+  content: '✓';
+  color: green;
+}
 
 
 
@@ -109,7 +133,12 @@ p.arrow_box {
 
 
 
-
+      <div>
+        <label for="fname">First name *: </label>
+        <input id="fname" name="fname" type="text" required>
+        <span></span>
+      </div>
+      
 
 
 
