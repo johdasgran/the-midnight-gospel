@@ -82,11 +82,17 @@ input + span {
 input + span::before {
   position: absolute;
   right: -20px;
-  top: 5px;
+  top: 2px;
 }
 
 input:invalid {
   border: 2px solid red;
+  border-radius: 5px;
+}
+
+input:valid {
+  border: 2px solid green;
+  border-radius: 5px;
 }
 
 input:invalid + span::before {
@@ -97,6 +103,7 @@ input:invalid + span::before {
 input:valid + span::before {
   content: '✓';
   color: green;
+  
 }
 
 
