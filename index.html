@@ -15,6 +15,7 @@
       }
       h1 {
         color: mediumpurple;
+        margin-top: 80px;
       }
 
       .first {
@@ -117,25 +118,32 @@
         box-sizing: border-box;
       }
 
-section {
-  display: flex;
-  justify-content: center;
+      section {
+        display: flex;
+        justify-content: center;
+      }
 
-}
+      figure.duncan {
+        display: flex;
+        justify-content: center;
+      }
 
-figure.duncan {
-  display: flex;
-  justify-content: center;
-}
+      nav {
+        width: 100%;
+        height: 60px;
+        background-color: mediumslateblue;
+        top: 0;
+        position: fixed;
+      }
 
-nav {
-  width: 100%;
-  height: 60px;
-  background-color: mediumslateblue;
-  top: 0;
-}
-
-
+      div.cuadrito {
+        height: 30px;
+        width: 30px;
+        background-color: indianred;
+        position: absolute;
+        bottom: 0;
+ 
+      }
     </style>
 
     <script>
@@ -146,8 +154,9 @@ nav {
     </script>
   </head>
   <body>
-
-<nav></nav>
+    <nav>
+      <div class="cuadrito"></div>
+    </nav>
 
     <h1>The Midnight Gospel</h1>
 
@@ -155,9 +164,6 @@ nav {
       <div class="model-box">Plazti</div>
       <div class="model-box">es lo mejor 🖤</div>
     </section>
-
-
-
 
     <p class="first">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quas id
